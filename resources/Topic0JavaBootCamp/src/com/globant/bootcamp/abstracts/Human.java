@@ -1,5 +1,6 @@
 package com.globant.bootcamp.abstracts;
 
+import com.globant.bootcamp.animals.Farmer;
 import com.globant.bootcamp.enums.Gender;
 import com.globant.bootcamp.interfaces.Aquatic;
 import com.globant.bootcamp.interfaces.HumanBeing;
@@ -20,4 +21,13 @@ public abstract class Human extends Animal<Human> implements HumanBeing<Human> ,
     public void swing() {
         System.out.println("Mover los pies y los brazos");
     }
+
+    @Override
+    public Farmer gaveBirth() {
+        if(this.gender == Gender.FEMALE)
+            return new Farmer(Animal.randomGender());
+        else
+        return null;
+    }
+
 }
