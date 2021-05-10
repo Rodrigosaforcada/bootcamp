@@ -29,6 +29,8 @@ public class Main {
 
         Main.singAnimals(animals);
 
+        System.out.println("Topic 0");
+
         int hens_in_henhouse;
 
         hens_in_henhouse = 40;
@@ -42,6 +44,15 @@ public class Main {
         System.out.println("\nAnd this is the result after the farmer");
         System.out.println("has sorted them by color in 6 x 5 egg's cartons.\n");
 
+        System.out.println("Topic 1");
+        //Singleton Patron demonstration
+        Henhouse henhouse_1 = Henhouse.getInstance();
+        Henhouse henhouse_2 = Henhouse.getInstance();
+
+        henhouse_1.setValue("Demonstration of the Singleton Patron with the Henhouse class.\n");
+        System.out.println(henhouse_2.getValue());
+        //The second variable returns the same value that was assigned to the
+        //first variable because both are referred to the same instance.
     }
 
     private static void singAnimals(Animal[] animalBox){

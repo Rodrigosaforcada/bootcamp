@@ -2,9 +2,45 @@ package com.globant.bootcamp.buildings;
 
 import com.globant.bootcamp.abstracts.Building;
 
+//The Singleton Pattern will be applied to the Henhouse class to avoid more
+//than one instantiation at the same time, following the instructions in topic 1.
+
 public class Henhouse {
 
-    //public int hens_in_henhouse;
+    //Block dedicated to controlling that the number of instances
+    // of the class is never greater than one unit.
+    private static Henhouse hen_house;
+    private String value;
+
+    private Henhouse() {
+
+    }
+
+    public static Henhouse getInstance() {
+
+        if(hen_house == null) {
+            hen_house = new Henhouse();
+        }
+
+        return hen_house;
+    }
+
+    public void hen_house(String msg) {
+        System.out.println(msg);
+    }
+
+    //Method set for demonstration of the only instance.
+    public void setValue(String msg) {
+        value = msg;
+    }
+
+    //Method get for demonstration of the only instance.
+    public String getValue() {
+        return value;
+    }
+
+    //End of block that define the Singleton Pattern.
+
 
     public void internal_space() {
         System.out.println("There are space for 50 chickens in the hen house.");
