@@ -6,6 +6,7 @@ import com.globant.bootcamp.enums.Gender;
 import com.globant.bootcamp.animals.Chicken;
 import com.globant.bootcamp.animals.Farmer;
 import com.globant.bootcamp.buildings.Henhouse;
+import com.globant.bootcamp.testClasses.Client;
 
 public class Main {
     public static void main(String[] args) {
@@ -49,10 +50,18 @@ public class Main {
         Henhouse henhouse_1 = Henhouse.getInstance();
         Henhouse henhouse_2 = Henhouse.getInstance();
 
+
+
         henhouse_1.setValue("Demonstration of the Singleton Patron with the Henhouse class.\n");
         System.out.println(henhouse_2.getValue());
         //The second variable returns the same value that was assigned to the
         //first variable because both are referred to the same instance.
+
+        System.out.println("Topic 2");
+        System.out.println("The error messages thrown based on their severity are ");
+        System.out.println("displayed, configured from the files related to log4j.\n");
+
+        Client.main();
     }
 
     private static void singAnimals(Animal[] animalBox){
