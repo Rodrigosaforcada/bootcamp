@@ -5,7 +5,8 @@ import com.globant.bootcamp.animals.Duck;
 import com.globant.bootcamp.enums.Gender;
 import com.globant.bootcamp.animals.Chicken;
 import com.globant.bootcamp.animals.Farmer;
-import com.globant.bootcamp.buildings.Henhouse;
+import com.globant.bootcamp.buildings.HenHouse;
+import com.globant.bootcamp.testClasses.Calculator;
 import com.globant.bootcamp.testClasses.Client;
 
 public class Main {
@@ -32,28 +33,28 @@ public class Main {
 
         System.out.println("Topic 0");
 
-        int hens_in_henhouse;
+        int hens_in_HenHouse;
 
-        hens_in_henhouse = 40;
+        hens_in_HenHouse = 40;
 
-        Henhouse.chickens_inside(hens_in_henhouse);
-        Henhouse.Henhouse_production(hens_in_henhouse);
+        HenHouse.chickensInside(hens_in_HenHouse);
+        HenHouse.HenHouseProduction(hens_in_HenHouse);
 
-        Farmer.Order_White_Eggs(Henhouse.Red_eggs(hens_in_henhouse));
-        Farmer.Order_Red_Eggs(Henhouse.White_eggs(hens_in_henhouse));
+        Farmer.orderWhiteEggs(HenHouse.whiteEggs(hens_in_HenHouse));
+        Farmer.orderRedEggs(HenHouse.redEggs(hens_in_HenHouse));
 
         System.out.println("\nAnd this is the result after the farmer");
         System.out.println("has sorted them by color in 6 x 5 egg's cartons.\n");
 
         System.out.println("Topic 1");
         //Singleton Patron demonstration
-        Henhouse henhouse_1 = Henhouse.getInstance();
-        Henhouse henhouse_2 = Henhouse.getInstance();
-
-
-
-        henhouse_1.setValue("Demonstration of the Singleton Patron with the Henhouse class.\n");
-        System.out.println(henhouse_2.getValue());
+//        HenHouse HenHouse_1 = HenHouse.getInstance();
+//        HenHouse HenHouse_2 = HenHouse.getInstance();
+//
+//
+//
+//        HenHouse_1.setValue("Demonstration of the Singleton Patron with the HenHouse class.\n");
+//        System.out.println(HenHouse_2.getValue());
         //The second variable returns the same value that was assigned to the
         //first variable because both are referred to the same instance.
 
@@ -62,6 +63,25 @@ public class Main {
         System.out.println("displayed, configured from the files related to log4j.\n");
 
         Client.main();
+
+        System.out.println("\nTopic 3");
+
+        System.out.println("\nTo learn and practice, a class called \"Calculator\" was");
+        System.out.println("used in order to simultaneously use all the Unit Testing cases with JUnit.");
+
+        System.out.println("\nTests were also applied on the methods of the Farmer and HenHouse classes,");
+        System.out.println("using exceptions in Farmer and simple tests in HenHouse, with the use");
+        System.out.println("of Before and After, if the need arises to use them.\n");
+
+        Calculator calc = new Calculator();
+
+        Farmer farmer2 = new Farmer(Gender.MALE);
+
+        farmer2.orderRedEggs(0);
+
+        System.out.println(calc.sum(3,5));
+        System.out.println(calc.division(3,0));
+
     }
 
     private static void singAnimals(Animal[] animalBox){
