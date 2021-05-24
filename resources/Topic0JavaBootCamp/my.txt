@@ -1,8 +1,4 @@
-[main] WARN  com.globant.bootcamp.testClasses.Client 17/05/2021 19:30:57  This is warn message
-[main] FATAL com.globant.bootcamp.testClasses.Client 17/05/2021 19:30:57  This is fatal message
-[main] ERROR com.globant.bootcamp.testClasses.Client 17/05/2021 19:30:57  This is error message
-[main] DEBUG com.globant.bootcamp.testClasses.Client 17/05/2021 19:34:36  This is debug message
-[main] INFO  com.globant.bootcamp.testClasses.Client 17/05/2021 19:34:36  This is info message
-[main] WARN  com.globant.bootcamp.testClasses.Client 17/05/2021 19:34:36  This is warn message
-[main] FATAL com.globant.bootcamp.testClasses.Client 17/05/2021 19:34:36  This is fatal message
-[main] ERROR com.globant.bootcamp.testClasses.Client 17/05/2021 19:34:36  This is error message
+[main] INFO  com.globant.bootcamp.testClasses.Client 24/05/2021 19:22:24  This is info message
+[main] WARN  com.globant.bootcamp.testClasses.Client 24/05/2021 19:22:24  This is warn message
+[main] FATAL com.globant.bootcamp.testClasses.Client 24/05/2021 19:22:24  This is fatal message
+[main] ERROR com.globant.bootcamp.testClasses.Client 24/05/2021 19:22:24  This is error message

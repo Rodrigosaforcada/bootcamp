@@ -77,10 +77,17 @@ public class Main {
 
         Farmer farmer2 = new Farmer(Gender.MALE);
 
-        farmer2.orderRedEggs(0);
+        //farmer2.orderRedEggs(0);
 
         System.out.println(calc.sum(3,5));
-        System.out.println(calc.division(3,0));
+        //System.out.println(calc.division(3,0));
+
+        System.out.println("\nTopic 4");
+
+        System.out.println("\nI was preparing an application with Spring MVC, but in the last step ");
+        System.out.println("the deployment failed due to some problems related to the local server, but the files ");
+        System.out.println("related to the configuration and flow control of the application are ready. I will ");
+        System.out.println("solve the local server problem before the bootcamp finishes.");
 
     }
 
